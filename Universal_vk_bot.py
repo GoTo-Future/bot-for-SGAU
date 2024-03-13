@@ -13,8 +13,8 @@ import datetime
 import socket
 import json
 
-vk_session = vk_api.VkApi(token='vk1.a.fW6xhIXyLDwog_FX1fRTMiyEoVZL_b0ENm2J4y5lBKZ0hefDhJylNknLzd4I72GJ6--1rNhspg41efbhbJYPX1osNLmRCi9QBKo5v2AhBszehAZKPFUCby-7EeOkHOXXl_2Cp6Z8-0Hqo3yU9FF-B5811qznwiJq-uFEq_rOmUXkHde-9RvMTvm_T4WyFFNWsCd1baqaZA1mwaB69y9TSg')
-longpoll = VkBotLongPoll(vk_session, '218320118')
+vk_session = vk_api.VkApi(token="токен который необходимо будет сгенерировать для группы, к которой будет привязан бот")
+longpoll = VkBotLongPoll(vk_session, 'номер сервера VK')
 vk = vk_session.get_api()
 reminder = []
 week = 11111
@@ -38,7 +38,7 @@ lesson_type = {
 
 def send(message, id):
     vk.messages.send(
-        key=('f25124946931a230031d57ddd73e4e0efcec4b7b'),  # ВСТАВИТЬ ПАРАМЕТРЫ
+        key=('сгенерированнай ключ для группы'),  # ВСТАВИТЬ ПАРАМЕТРЫ
         server=('https://lp.vk.com/wh218320118'),
         ts=('42'),
         random_id=get_random_id(),
@@ -56,13 +56,6 @@ async def timetable(url, weekday, event):
     soup = BeautifulSoup(ans, 'html.parser')
     a = soup.find_all('div', class_='schedule__item')
     b = soup.find_all('div', class_='schedule__time-item')
-    ###################################################################################
-    # c = soup.find_all("div", {"class": "schedule__discipline"})
-    # print("=====", a)
-    # for i in c:
-    #     print(i["class"][-1])
-    #print("------>",c["class"][-1])
-    ##################################################################################
     if b != []:
         timetable = []
         clock = []
@@ -245,19 +238,16 @@ async def bot(event):
         with open("list_id.json") as j:
             data = j.read()
             data = json.loads(data)
-            # vk_id = data["vk_id"]
         with open("general_config.json") as j:
             gen = j.read()
             gen = eval(gen)
             teachers = gen["teachers"]
             fam = list(teachers.keys())
             week_correct = gen["week_correct"]
-            #print(datetime.datetime.now().month)
             if datetime.datetime.now().month > 7:
                 week_correct = week_correct["1"]
             else:
                 week_correct = week_correct["2"]
-            #print("=======\n",week_correct)
         if event.type == VkBotEventType.MESSAGE_NEW:
             message = event.object.message.get('text').lower()
             person_id = list(event.object.values())[0].get('from_id')
@@ -275,7 +265,6 @@ async def bot(event):
             with open(group_config) as j:
                 config = j.read()
                 config = eval(config)
-            # if person_id in vk_id:
             if re.match('jarvis', message) or re.match('джарвиз', message) or re.match('jarvis,',message) or re.match('джарвиз,', message) or re.match('бот', message) or re.match('bot', message) or re.match('бот,',message) or re.match('bot,', message):
                 if re.match('джарвиз', message) or re.match('jarvis,', message):
                     message = message[7:]
@@ -347,7 +336,6 @@ async def bot(event):
                         data = json.loads(data)
                         url = data["student_url"]
                     if message != '':
-                        #print(message)
                         if message == "сегодня" or message == "на/сегодня":
                             weekday = datetime.datetime.today()
                             week = weekday.isocalendar()[1] + int(week_correct)
@@ -368,37 +356,24 @@ async def bot(event):
                             week = weekday.isocalendar()[1] + int(week_correct)
                             weekday = weekday.weekday()
                         elif "на/неделю" in message or "неделя" in message:
-                            #print("nedela")
                             message = message.replace("на/неделю", "")
                             message = message.replace("неделя", "")
                             if "+" in message or "-" in message:
-                                #print("!")
                                 message = message.replace("/", "")
                                 weekday = datetime.datetime.today()
                                 week = weekday.isocalendar()[1] + int(week_correct) + int(message)
                                 weekday = 0
                                 url = url.replace("11111", str(week))
                                 message = "неделя"
-                                # for i in range(weekday, 6):
-                                #     weekday, str_timetable = await timetable(url, i, event)
-                                #     vk.messages.send(peer_id=person_id, message=weekday, random_id=0)
-                                #     vk.messages.send(peer_id=person_id, message=str_timetable, random_id=0)
                             else:
-                                #print("@")
                                 weekday = datetime.datetime.today()
                                 week = weekday.isocalendar()[1] + int(week_correct)
                                 weekday = weekday.weekday()
                                 url = url.replace("11111", str(week))
                                 message = "неделя"
-                                # for i in range(weekday, 6):
-                                #     weekday, str_timetable = await timetable(url, i, event)
-                                #     vk.messages.send(peer_id=person_id, message=weekday, random_id=0)
-                                #     vk.messages.send(peer_id=person_id, message=str_timetable, random_id=0)
                         elif message.split("/")[0] in fam:
-                            #print("!!!")
                             url = teachers[message.split("/")[0]]
                             week = datetime.datetime.today().isocalendar()[1] + int(week_correct)
-                            #print(message)
                             if "+" in message:
                                 f = message.split("+")
                                 message = f[0].strip()
@@ -410,11 +385,8 @@ async def bot(event):
                             else:
                                 message=message.strip()
                             tt = await teacher_timetable(url, week)
-                            #now_weekday = datetime.datetime.today()
-                            #now_weekday = now_weekday.weekday()
 
                         elif message in list_week:
-                            #print("=weekday=")
                             now_weekday = datetime.datetime.today()
                             week = now_weekday.isocalendar()[1] + int(week_correct)
                             now_weekday = now_weekday.weekday()
@@ -427,14 +399,12 @@ async def bot(event):
                                     weekday = datetime.datetime.strptime(message, "%d/%m")
                                     weekday = weekday.replace(year=datetime.datetime.today().year)
                                     week = weekday.isocalendar()[1] + int(week_correct)
-                                    # print("---", weekday)
                                 except ValueError:
                                     try:
                                         weekday = datetime.datetime.strptime(message, "%d/%m/%Y")
                                     except ValueError:
                                         weekday = datetime.datetime.strptime(message, "%d/%m/%y")
                                     week = weekday.isocalendar()[1] + int(week_correct)
-                                    # print("^^", weekday)
                                 weekday = weekday.weekday()
                             else:
                                 if event.from_chat:
@@ -447,8 +417,6 @@ async def bot(event):
                     else:
                         weekday = datetime.datetime.today().weekday()
                         week = datetime.datetime.today().isocalendar()[1] + int(week_correct) #     2 семестр
-                    #url = "https://ssau.ru/rasp?groupId=530994177&selectedWeek=" + str(week) + "&selectedWeekday=1"
-                    #print(week)
                     url = url.replace("11111", str(week))
                     if event.from_user:
                         if message == "на/неделю" or message == "неделя":
@@ -457,8 +425,6 @@ async def bot(event):
                                 vk.messages.send(peer_id=person_id, message=weekday, random_id=0)
                                 vk.messages.send(peer_id=person_id, message=str_timetable, random_id=0)
                         else:
-                            # print("---")
-                            # print(weekday)
                             if tt != '':
                                 tt = await teacher_timetable(url, week)
                                 vk.messages.send(peer_id=person_id, message=tt, random_id=0)
@@ -473,8 +439,6 @@ async def bot(event):
                                 send(weekday, event.chat_id)
                                 send(str_timetable, event.chat_id)
                         else:
-                            # print("---")
-                            # print(weekday)
                             if tt != '':
                                 tt = await teacher_timetable(url, week)
                                 send(tt, event.chat_id)
@@ -482,17 +446,6 @@ async def bot(event):
                                 weekday, str_timetable = await timetable(url, weekday, event)
                                 send(weekday, event.chat_id)
                                 send(str_timetable, event.chat_id)
-                        # # print(event.chat_id)
-                        # if message == "на/неделю" or message == "неделя":
-                        #     for i in range(weekday, 6):
-                        #         if event.chat_id == config["chat_id"]:
-                        #             weekday, str_timetable = await timetable(url, i, event)
-                        #             send(f"{weekday}", event.chat_id)
-                        #             send(str_timetable, event.chat_id)
-                        # else:
-                        #     weekday, str_timetable = await timetable(url, weekday, event)
-                        #     send(f"{weekday}", event.chat_id)
-                        #     send(str_timetable, event.chat_id)
                 elif re.search("посмотреть дедлайны", message) or re.search("посмотреть дэдлайны", message) or re.search("дэдлайны", message):
                     async with sql.connect("deadline.db") as db:
                         deadlines = await db.execute("SELECT * FROM deadline")
