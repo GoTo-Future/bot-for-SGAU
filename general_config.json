@@ -1,0 +1,131 @@
+{
+  "week_correct":{
+  "1": "-34",
+  "2": "+18"
+  },
+  "teachers": {
+    "абаимов": "https://ssau.ru/rasp?staffId=64778001&selectedWeek=11111&selectedWeekday=1",
+    "абаимов ма": "https://ssau.ru/rasp?staffId=64778001&selectedWeek=11111&selectedWeekday=1",
+    "абаимов м.а.": "https://ssau.ru/rasp?staffId=64778001&selectedWeek=11111&selectedWeekday=1",
+
+    "абдрахимова": "https://ssau.ru/rasp?staffId=197496198&selectedWeek=11111&selectedWeekday=1",
+    "абдрахимова ес": "https://ssau.ru/rasp?staffId=197496198&selectedWeek=11111&selectedWeekday=1",
+    "абдрахимова е.с.": "https://ssau.ru/rasp?staffId=197496198&selectedWeek=11111&selectedWeekday=1",
+
+    "абдульмянов": "https://ssau.ru/rasp?staffId=172550146&selectedWeek=11111&selectedWeekday=1",
+    "абдульмянов ар": "https://ssau.ru/rasp?staffId=172550146&selectedWeek=11111&selectedWeekday=1",
+    "абдульмянов а.р.": "https://ssau.ru/rasp?staffId=172550146&selectedWeek=11111&selectedWeekday=1",
+
+    "абрамова": "https://ssau.ru/rasp?staffId=63385001&selectedWeek=11111&selectedWeekday=1",
+    "абрамова иг": "https://ssau.ru/rasp?staffId=63385001&selectedWeek=11111&selectedWeekday=1",
+    "абрамова и.г.": "https://ssau.ru/rasp?staffId=63385001&selectedWeek=11111&selectedWeekday=1",
+
+    "горячкин": "https://ssau.ru/rasp?staffId=279689972&selectedWeek=11111&selectedWeekday=1",
+
+    "орлова": "https://ssau.ru/rasp?staffId=99647104&selectedWeek=11111&selectedWeekday=1",
+    "орлова ев": "https://ssau.ru/rasp?staffId=99647104&selectedWeek=11111&selectedWeekday=1",
+    "орлова е.в.": "https://ssau.ru/rasp?staffId=99647104&selectedWeek=11111&selectedWeekday=1",
+
+    "орлов": "https://ssau.ru/rasp?staffId=60902001&selectedWeek=11111&selectedWeekday=1",
+    "орлов м.ю.": "https://ssau.ru/rasp?staffId=60902001&selectedWeek=11111&selectedWeekday=1",
+    "орлов мю": "https://ssau.ru/rasp?staffId=60902001&selectedWeek=11111&selectedWeekday=1",
+
+    "батурин": "https://ssau.ru/rasp?staffId=61579001&selectedWeek=11111&selectedWeekday=1",
+    "батурин о.в.": "https://ssau.ru/rasp?staffId=61579001&selectedWeek=11111&selectedWeekday=1",
+    "батурин ов": "https://ssau.ru/rasp?staffId=61579001&selectedWeek=11111&selectedWeekday=1",
+
+    "рязанов": "https://ssau.ru/rasp?staffId=101294848&selectedWeek=11111&selectedWeekday=1",
+    "рязанов а.и.": "https://ssau.ru/rasp?staffId=101294848&selectedWeek=11111&selectedWeekday=1",
+    "рязанов аи": "https://ssau.ru/rasp?staffId=101294848&selectedWeek=11111&selectedWeekday=1",
+
+    "балякин": "https://ssau.ru/rasp?staffId=59915001&selectedWeek=11111&selectedWeekday=1",
+    "балякин вб": "https://ssau.ru/rasp?staffId=59915001&selectedWeek=11111&selectedWeekday=1",
+    "балякин в.б.": "https://ssau.ru/rasp?staffId=59915001&selectedWeek=11111&selectedWeekday=1",
+
+    "лыкин": "https://ssau.ru/rasp?staffId=58851001&selectedWeek=11111&selectedWeekday=1",
+
+    "иващенко": "https://ssau.ru/rasp?staffId=62323001&selectedWeek=11111&selectedWeekday=1",
+
+    "зубанов": "https://ssau.ru/rasp?staffId=291350451&selectedWeek=11111&selectedWeekday=1",
+
+    "зрелов": "https://ssau.ru/rasp?staffId=60388001&selectedWeek=11111&selectedWeekday=1",
+
+    "ефимов": "https://ssau.ru/rasp?staffId=60306001&selectedWeek=11111&selectedWeekday=1",
+    "ефимов еа": "https://ssau.ru/rasp?staffId=60306001&selectedWeek=11111&selectedWeekday=1",
+    "ефимов е.а.": "https://ssau.ru/rasp?staffId=60306001&selectedWeek=11111&selectedWeekday=1",
+    "ефимова": "https://ssau.ru/rasp?staffId=60306001&selectedWeek=11111&selectedWeekday=1",
+    "вышка": "https://ssau.ru/rasp?staffId=60306001&selectedWeek=11111&selectedWeekday=1",
+    "вышмат": "https://ssau.ru/rasp?staffId=60306001&selectedWeek=11111&selectedWeekday=1",
+    "высшаяматематика": "https://ssau.ru/rasp?staffId=60306001&selectedWeek=11111&selectedWeekday=1",
+
+    "федотов": "https://ssau.ru/rasp?staffId=62027001&selectedWeek=11111&selectedWeekday=1",
+    "федотова": "https://ssau.ru/rasp?staffId=62027001&selectedWeek=11111&selectedWeekday=1",
+    "электроника": "https://ssau.ru/rasp?staffId=62027001&selectedWeek=11111&selectedWeekday=1",
+
+    "лавров": "https://ssau.ru/rasp?staffId=66970001&selectedWeek=11111&selectedWeekday=1",
+    "лаврова": "https://ssau.ru/rasp?staffId=66970001&selectedWeek=11111&selectedWeekday=1",
+    "электротехника": "https://ssau.ru/rasp?staffId=66970001&selectedWeek=11111&selectedWeekday=1",
+
+    "алексеевалексей": "https://ssau.ru/rasp?staffId=101286084&selectedWeek=11111&selectedWeekday=1",
+    "алексееваалексея": "https://ssau.ru/rasp?staffId=101286084&selectedWeek=11111&selectedWeekday=1",
+    "теоретическаямеханика": "https://ssau.ru/rasp?staffId=101286084&selectedWeek=11111&selectedWeekday=1",
+    "термех": "https://ssau.ru/rasp?staffId=101286084&selectedWeek=11111&selectedWeekday=1",
+
+    "варфоломеева": "https://ssau.ru/rasp?staffId=64832001&selectedWeek=11111&selectedWeekday=1",
+    "варфоломеевой": "https://ssau.ru/rasp?staffId=101286084&selectedWeek=11111&selectedWeekday=1",
+    "экология": "https://ssau.ru/rasp?staffId=64832001&selectedWeek=11111&selectedWeekday=1",
+
+    "ермилов": "https://ssau.ru/rasp?staffId=246890842&selectedWeek=11111&selectedWeekday=1",
+    "ермилова": "https://ssau.ru/rasp?staffId=246890842&selectedWeek=11111&selectedWeekday=1",
+    "практикмоделированиесистемипроцессов": "https://ssau.ru/rasp?staffId=246890842&selectedWeek=11111&selectedWeekday=1",
+    "практикмоделирование": "https://ssau.ru/rasp?staffId=246890842&selectedWeek=11111&selectedWeekday=1",
+
+    "крючков": "https://ssau.ru/rasp?staffId=60636001&selectedWeek=11111&selectedWeekday=1",
+    "крючкова": "https://ssau.ru/rasp?staffId=246890842&selectedWeek=11111&selectedWeekday=1",
+    "лектормоделированиесистемипроцессов": "https://ssau.ru/rasp?staffId=246890842&selectedWeek=11111&selectedWeekday=1",
+    "лектормоделирование": "https://ssau.ru/rasp?staffId=246890842&selectedWeek=11111&selectedWeekday=1",
+
+    "кудряшов": "https://ssau.ru/rasp?staffId=441326185&selectedWeek=11111&selectedWeekday=1",
+
+    "алексееввячеслав": "https://ssau.ru/rasp?staffId=335637777&selectedWeek=11111&selectedWeekday=1",
+    "алексеевавячеслава": "https://ssau.ru/rasp?staffId=335637777&selectedWeek=11111&selectedWeekday=1",
+    "практикметрология": "https://ssau.ru/rasp?staffId=335637777&selectedWeek=11111&selectedWeekday=1",
+
+    "крейдич": "https://ssau.ru/rasp?staffId=101829937&selectedWeek=11111&selectedWeekday=1",
+    "лекторметрология": "https://ssau.ru/rasp?staffId=101829937&selectedWeek=11111&selectedWeekday=1",
+
+    "миронова": "https://ssau.ru/rasp?staffId=101636312&selectedWeek=11111&selectedWeekday=1",
+    "миронова т.б.": "https://ssau.ru/rasp?staffId=101636312&selectedWeek=11111&selectedWeekday=1",
+    "миронова тб": "https://ssau.ru/rasp?staffId=101636312&selectedWeek=11111&selectedWeekday=1",
+
+    "мелентьев": "https://ssau.ru/rasp?staffId=128929644&selectedWeek=11111&selectedWeekday=1",
+    "мелентьев в.с.": "https://ssau.ru/rasp?staffId=128929644&selectedWeek=11111&selectedWeekday=1",
+    "мелентьев вс": "https://ssau.ru/rasp?staffId=128929644&selectedWeek=11111&selectedWeekday=1",
+
+    "сазанов":"https://ssau.ru/rasp?staffId=62754001&selectedWeek=11111&selectedWeekday=1",
+
+    "шулепов": "https://ssau.ru/rasp?staffId=64984001&selectedWeek=11111&selectedWeekday=1",
+    "шулепов а.п.": "https://ssau.ru/rasp?staffId=64984001&selectedWeek=11111&selectedWeekday=1",
+    "шулепов ап": "https://ssau.ru/rasp?staffId=64984001&selectedWeek=11111&selectedWeekday=1",
+
+    "шербань": "https://ssau.ru/rasp?staffId=335816531&selectedWeek=11111&selectedWeekday=1",
+
+    "карпов": "https://ssau.ru/rasp?staffId=552701336&selectedWeek=11111&selectedWeekday=1",
+    "карпов а.в.": "https://ssau.ru/rasp?staffId=552701336&selectedWeek=11111&selectedWeekday=1",
+    "карпов ав": "https://ssau.ru/rasp?staffId=552701336&selectedWeek=11111&selectedWeekday=1",
+
+    "жидяев": "https://ssau.ru/rasp?staffId=151298758&selectedWeek=11111&selectedWeekday=1",
+
+    "уланов": "https://ssau.ru/rasp?staffId=61335001&selectedWeek=11111&selectedWeekday=1",
+
+    "шакиров": "https://ssau.ru/rasp?staffId=61465001&selectedWeek=11111&selectedWeekday=1",
+
+    "печенин": "https://ssau.ru/rasp?staffId=290677596&selectedWeek=11111&selectedWeekday=1",
+
+    "швецов": "https://ssau.ru/rasp?staffId=333796140&selectedWeek=11111&selectedWeekday=1",
+
+    "чечет": "https://ssau.ru/rasp?staffId=62530001&selectedWeek=11111&selectedWeekday=1",
+    "чечет и.в.": "https://ssau.ru/rasp?staffId=62530001&selectedWeek=11111&selectedWeekday=1",
+    "чечет ив": "https://ssau.ru/rasp?staffId=62530001&selectedWeek=11111&selectedWeekday=1"
+  }
+}
